@@ -1,0 +1,25 @@
+La aplicación está accesible en el siguiente enlace: https://examen-web-antonio-gc.herokuapp.com/
+
+El probehedor PaaS es Heroku, aunque tambien se utiliza Firebase a modo de base de datos y para almacenar las imagenes
+
+El framework que se utiliza en el cliente es React
+
+Para el servidor usamos Node.js junto con Express
+
+Para instalar la aplicación en local simplemente basta con ejecutar el comando "npm i" dentro de la carpeta principal del proyecto para instalar las dependencias. 
+
+Una vez instaladas las dependencias se podrá ejecutar usando el comando "npm run serve" dentro de la misma carpeta.
+
+Ya le he incluido dentro del proyecto de Firebase como editor, por lo que debería tener acceso directamente al proyecto, si no es así pongase en contacto conmigo.
+
+Se ha implementado toda la funcionalidad que se pide en el enunciado. 
+
+Las principales limitaciones son:
+
+1. En circunstancias muy concretas es posible que al subir una imagen se sobre escriba otra ya existente. En la practica esto es practicamente imposible, pero cabe mencionarlo.
+
+2. Firebase no permite hacer una consulta en la que se compruebe si un campo contiene cierto texto, por lo que se está haciendo en el codigo JavaScript, por lo que si hay muchos datos puede ser ineficiente (tenemos que descargar toda la lista de articulos y luego filtrarlos)
+
+3. La interfaz no es muy bonita ni intuitiva, pero funciona, que es lo importante.
+
+Hay dos usuarios por defecto paco@uma.es y paco2@uma.es, ambos con la contraseña 123456
